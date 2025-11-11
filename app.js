@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 });
 
 // API endpoint to fetch and modify content
+// This endpoint replaces all instances of 'Yale' with 'Fale' while preserving URLs
 app.post('/fetch', async (req, res) => {
   try {
     const { url } = req.body;
